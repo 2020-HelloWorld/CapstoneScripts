@@ -2,7 +2,7 @@
 Detection of covert channel in the network using machine learning.
 
 # Literature Survey
-![SpreadSheet]https://docs.google.com/spreadsheets/d/18hXsATAqJMUNwnvucOfUVm8bMuZcC0YDWaeEXVuBem8/edit#gid=0
+![SpreadSheet](https://docs.google.com/spreadsheets/d/18hXsATAqJMUNwnvucOfUVm8bMuZcC0YDWaeEXVuBem8/edit#gid=0)
 
 ## Ideas
 1. Pattern analysis in graph (For stateful technique)
