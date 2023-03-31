@@ -36,6 +36,8 @@ def method2():
     if padding != 0:
         bits = "0"*(BIT_SPLIT-padding)+bits
         n += BIT_SPLIT-padding
+    print("modified datalen:", n)
+    print("modified bits:",bits)
     # bitstring = bits
     # num = int(bitstring, 2)
 
@@ -84,4 +86,3 @@ def method2():
 #     # close the socket
 #     client_socket.close()
 method2()
-
