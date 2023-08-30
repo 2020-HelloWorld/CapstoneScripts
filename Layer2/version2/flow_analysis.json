@@ -1,0 +1,77 @@
+[
+    {
+        "multimod2": 9,
+        "flow_id": [
+            "10.0.2.15",
+            "-",
+            "8.8.4.4"
+        ],
+        "c": 13000,
+        "nrPackets": 131,
+        "autocorr": 16983.3024,
+        "widthave": 5.822006236545657e-07,
+        "nrPacketsMode": 0.3384615384615385,
+        "unique": 9,
+        "multimod": 0
+    },
+    {
+        "multimod2": 70,
+        "flow_id": [
+            "8.8.8.8",
+            "-",
+            "10.0.2.15"
+        ],
+        "c": 20100,
+        "nrPackets": 202,
+        "autocorr": 41855.43139599999,
+        "widthave": 0.0019057052255471907,
+        "nrPacketsMode": 0.0945273631840796,
+        "unique": 70,
+        "multimod": 0
+    },
+    {
+        "multimod2": 5,
+        "flow_id": [
+            "10.0.2.15",
+            "-",
+            "8.8.8.4"
+        ],
+        "c": 500,
+        "nrPackets": 6,
+        "autocorr": 25.948836,
+        "widthave": 4.239215876307675e-05,
+        "nrPacketsMode": 0.2,
+        "unique": 5,
+        "multimod": 0
+    },
+    {
+        "multimod2": 11,
+        "flow_id": [
+            "10.0.2.15",
+            "-",
+            "8.8.8.8"
+        ],
+        "c": 20400,
+        "nrPackets": 205,
+        "autocorr": 41854.613055999995,
+        "widthave": 1.0766842750569632e-06,
+        "nrPacketsMode": 0.3333333333333333,
+        "unique": 11,
+        "multimod": 0
+    },
+    {
+        "multimod2": 56,
+        "flow_id": [
+            "8.8.4.4",
+            "-",
+            "10.0.2.15"
+        ],
+        "c": 12900,
+        "nrPackets": 130,
+        "autocorr": 16983.041761,
+        "widthave": 0.0012585992919114657,
+        "nrPacketsMode": 0.08527131782945736,
+        "unique": 56,
+        "multimod": 0
+    }
+]

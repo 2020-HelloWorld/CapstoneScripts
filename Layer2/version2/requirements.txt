@@ -1,0 +1,8 @@
+#python
+scipy
+numpy
+
+
+#c
+libcap
+json-c
