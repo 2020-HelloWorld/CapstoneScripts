@@ -47,7 +47,7 @@ for flow_id, data in flow_iat.items():
     kde_estimate = density.evaluate(x_values)
 
     # Find local maxima indices
-    local_maxima_indices = argrelextrema(kde_estimate, np.greater)
+    local_maxima_indices = argrelextrema(kde_estimate, np.greater,mode='wrap')
     kde_peaks = len(local_maxima_indices[0])#done
 
     peak_widths = []
@@ -56,7 +56,7 @@ for flow_id, data in flow_iat.items():
         peak_widths.append(2 * np.sqrt(2 * np.log(2)) * kernel_std)
 
     # Calculate the average width
-    average_width = np.mean(peak_widths)
+    average_width = np.mean(peak_widths) if len(peak_widths) > 0 else 0
 
     # Plot the original data and KDE
     plt.figure(figsize=(10, 6))
@@ -105,7 +105,8 @@ for flow_id, data in flow_iat.items():
     covert_bytes = 100 * len(iat_values)
     # Calculate the mode of IAT values using scipy.stats.mode()
     mode_result = mode(iat_values)
-    mode_iat = mode_result.mode[0]
+    mode_iat = mode_result[0]
+    #print(mode_iat,mode_result.mode)
 
     p_mode = np.count_nonzero(iat_values == mode_iat) / len(iat_values)
 
