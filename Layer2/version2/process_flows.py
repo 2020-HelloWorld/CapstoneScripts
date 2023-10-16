@@ -90,15 +90,6 @@ for flow_id, data in flow_iat.items():
     plt.savefig(s)
 
 
-
-
-
-
-
-
-
-
-
     symbols = len(set(iat_values)) #Not considered
     peak_std_mean = average_width#done
     autocorr_sum = np.sum(np.correlate(iat_values, iat_values, mode='full'))
