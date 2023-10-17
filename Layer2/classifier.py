@@ -1,6 +1,6 @@
 import json
 
-def descisionTree(u,nr_packets,c,multimod):
+def descisionTree(u,nr_packets,c,nrPacketsMode,widthwave):
     if u == 1:
         return False
     else:
@@ -15,12 +15,15 @@ def descisionTree(u,nr_packets,c,multimod):
             if u/c > 0.9:
                 return False
             else:
-                if multimod > 0.7:
+                if nrPacketsMode > 0.7:
                     return False
                 else:
-                    return True
+                    if 1<widthwave<50:
+                        return True
+                    else:
+                        return False
 
-with open("flow_analysis.json") as jsonFIle:
+with open("flow_data.json") as jsonFIle:
     flowData = json.load(jsonFIle)
 
 for flow in flowData:
@@ -35,5 +38,5 @@ for flow in flowData:
     widthwave = flow["widthave"]
     autocorr = flow["autocorr"]
 
-    print(src,"\t-\t",dst,"\t\t",descisionTree(u,nr_packets,c,multimod))
+    print(src,"\t-\t",dst,"\t\t",descisionTree(u,nr_packets,c,nr_mode,widthwave*1000))
 
