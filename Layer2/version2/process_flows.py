@@ -3,13 +3,22 @@ import numpy as np
 from scipy.stats import gaussian_kde,mode
 import matplotlib.pyplot as plt
 from scipy.signal import argrelextrema
-
+import math
 # Read packet data from the JSON file created during packet sniffing
 with open("packet_data.json", "r") as json_file:
     packet_data = [json.loads(line) for line in json_file]
 
 # Create a dictionary to store flow information and IAT values
 flow_iat = {}
+
+def tab(x):
+	if x<=3:
+		return 7
+	if x in range(4,16):
+		return 3
+	if x>=16:
+		return 1
+	raise ValueError
 
 # Extract packet data and calculate IAT values for each flow
 for packet in packet_data:
@@ -49,6 +58,11 @@ for flow_id, data in flow_iat.items():
     # Find local maxima indices
     local_maxima_indices = argrelextrema(kde_estimate, np.greater,mode='wrap')
     kde_peaks = len(local_maxima_indices[0])#done
+    
+    
+    
+    
+    
 
     peak_widths = []
     for idx in local_maxima_indices[0]:
@@ -93,7 +107,10 @@ for flow_id, data in flow_iat.items():
     symbols = len(set(iat_values)) #Not considered
     peak_std_mean = average_width#done
     autocorr_sum = np.sum(np.correlate(iat_values, iat_values, mode='full'))
-    covert_bytes = 100 * len(iat_values)
+    
+    
+    
+    
     # Calculate the mode of IAT values using scipy.stats.mode()
     mode_result = mode(iat_values)
     mode_iat = mode_result[0]
@@ -103,6 +120,8 @@ for flow_id, data in flow_iat.items():
 
 
     num_packets = len(timestamps)
+    #COvert bytes
+    covert_bytes = num_packets/tab(math.floor(kde_peaks))
 
     result = {
         "flow_id": flow_id,#Done

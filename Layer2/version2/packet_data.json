@@ -2693,3 +2693,17 @@
 { "timestamp_sec": 1694027707, "timestamp_us": 176816, "source_ip": "10.0.2.243", "destination_ip": "10.0.2.242", "protocol": "UDP" }
 { "timestamp_sec": 1694027707, "timestamp_us": 349185, "source_ip": "10.0.2.243", "destination_ip": "10.0.2.242", "protocol": "UDP" }
 { "timestamp_sec": 1694027707, "timestamp_us": 504391, "source_ip": "10.0.2.243", "destination_ip": "10.0.2.242", "protocol": "UDP" }
+{ "timestamp_sec": 1697492496, "timestamp_us": 919528, "source_ip": "10.0.2.243", "destination_ip": "8.8.8.8", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492497, "timestamp_us": 47791, "source_ip": "8.8.8.8", "destination_ip": "10.0.2.243", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492497, "timestamp_us": 920801, "source_ip": "10.0.2.243", "destination_ip": "8.8.8.8", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492498, "timestamp_us": 787, "source_ip": "8.8.8.8", "destination_ip": "10.0.2.243", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492498, "timestamp_us": 921977, "source_ip": "10.0.2.243", "destination_ip": "8.8.8.8", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492498, "timestamp_us": 966280, "source_ip": "8.8.8.8", "destination_ip": "10.0.2.243", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492499, "timestamp_us": 931772, "source_ip": "10.0.2.243", "destination_ip": "8.8.8.8", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492499, "timestamp_us": 965080, "source_ip": "8.8.8.8", "destination_ip": "10.0.2.243", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492500, "timestamp_us": 932565, "source_ip": "10.0.2.243", "destination_ip": "8.8.8.8", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492500, "timestamp_us": 973530, "source_ip": "8.8.8.8", "destination_ip": "10.0.2.243", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492501, "timestamp_us": 934862, "source_ip": "10.0.2.243", "destination_ip": "8.8.8.8", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492501, "timestamp_us": 954694, "source_ip": "8.8.8.8", "destination_ip": "10.0.2.243", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492502, "timestamp_us": 940021, "source_ip": "10.0.2.243", "destination_ip": "8.8.8.8", "protocol": "ICMP" }
+{ "timestamp_sec": 1697492502, "timestamp_us": 976249, "source_ip": "8.8.8.8", "destination_ip": "10.0.2.243", "protocol": "ICMP" }
