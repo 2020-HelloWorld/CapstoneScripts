@@ -2,7 +2,7 @@
 
 
 # Function to handle SIGINT signal
-function cleanup {
+cleanup() {
     echo "Caught SIGINT, cleaning up..."
     
     # Kill all background processes

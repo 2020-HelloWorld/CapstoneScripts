@@ -12,7 +12,7 @@ cleanup (){
     exit 1
 
     cd -
-    cd 
+     
 }
 cd "../Layer 1"
 python3 Process_TTL_Deviation.py
