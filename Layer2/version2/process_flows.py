@@ -51,6 +51,7 @@ for flow_id, data in flow_iat.items():
 
     density = gaussian_kde(iat_values)
 
+
     # Evaluate KDE at a range of x values
     x_values = np.linspace(min(iat_values), max(iat_values), 1000)
     kde_estimate = density.evaluate(x_values)
@@ -58,7 +59,7 @@ for flow_id, data in flow_iat.items():
     # Find local maxima indices
     local_maxima_indices = argrelextrema(kde_estimate, np.greater,mode='wrap')
 
-    max_delay=float(max(local_maxima_indices[0]) )
+    max_delay=max(x_values[local_maxima_indices[0]])
 
     kde_peaks = len(local_maxima_indices[0])#done
     
@@ -139,6 +140,7 @@ for flow_id, data in flow_iat.items():
         "maxDelay_ms":max_delay*1000
     }
     results.append(result)
+
 
 # Store the results in a JSON file
 output_filename = "flow_analysis.json"
