@@ -57,6 +57,9 @@ for flow_id, data in flow_iat.items():
 
     # Find local maxima indices
     local_maxima_indices = argrelextrema(kde_estimate, np.greater,mode='wrap')
+
+    max_delay=float(max(local_maxima_indices[0]) )
+
     kde_peaks = len(local_maxima_indices[0])#done
     
     
@@ -132,7 +135,8 @@ for flow_id, data in flow_iat.items():
         "autocorr": autocorr_sum,
         "c": covert_bytes,
         "nrPacketsMode": p_mode,#Done
-        "nrPackets": num_packets #Done
+        "nrPackets": num_packets, #Done
+        "maxDelay_ms":max_delay*1000
     }
     results.append(result)
 
