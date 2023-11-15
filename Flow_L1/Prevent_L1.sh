@@ -6,7 +6,7 @@ cleanup (){
     # Kill all background processes
     kill 0
 
-    make clean
+    # make clean
     
     # Exit the script
     exit 1
@@ -33,6 +33,8 @@ make
 make ins
 
 cd "-"
+
+echo "TCP Timestamp Prevention Active"
 
 
 

@@ -1,11 +1,11 @@
 #!/bin/sh
 cd "Prevention/ttl"
 make rm
-make clean
+# make clean
 
 cd "../tcp_timestamp"
 make rm
-make clean
+# make clean
 cd -
 
 
