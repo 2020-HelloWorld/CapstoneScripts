@@ -1,6 +1,6 @@
 import subprocess
 import json
-with open('your_data.json', 'r') as json_file:
+with open('covert_layer2.json', 'r') as json_file:
     data = json.load(json_file)
 
 NETCARD = "enp0s3"
