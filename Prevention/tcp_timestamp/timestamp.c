@@ -19,9 +19,9 @@ unsigned int printTCPTimestamps(void *priv, struct sk_buff *skb, const struct nf
         struct tcphdr *tcph = tcp_hdr(skb);
 
         // Check if the SYN flag is set.
-        if (!tcph->syn) {
-            return NF_ACCEPT;
-        }
+        // if (!tcph->syn) {
+        //     return NF_ACCEPT;
+        // }
 
         // Check for TCP options.
         int tcphdrlen = tcph->doff * 4;

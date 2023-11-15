@@ -28,6 +28,12 @@ cd -
 
 echo "TTL Prevention Active"
 
+cd "../tcp_timestamp"
+make
+make ins
+
+cd "-"
+
 
 
 
