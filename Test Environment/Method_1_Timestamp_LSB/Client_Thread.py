@@ -1,4 +1,5 @@
 from scapy.all import *
+import time
 SERVER_IP = '192.168.250.204' #<Server IP>
 SERVER_PORT = 1234
 SOURCE_PORT=12346
@@ -12,6 +13,7 @@ def comm():
     # Send ACK packet to complete the 3-way handshake
     ack = IP(dst=SERVER_IP)/TCP(dport=SERVER_PORT,sport=SOURCE_PORT, flags="A", ack=syn_ack.seq + 1,chksum=0,seq=1)
     send(ack)
+    time.sleep(1)
 
     with open('tosend.txt', 'rb') as f:
         file_bytes = bytearray(f.read())
