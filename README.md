@@ -10,3 +10,7 @@ Detection of covert channel in the network using machine learning.
 3. Disrupting timing covert channel by introducing random delay in packet transmission
 4. Modifying timstamp of related packets
 ##Checking push
+
+
+Final PPT 
+https://www.canva.com/design/DAF0XVJQsKI/C7WklHQpZRNiieSLnoAsuw
