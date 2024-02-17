@@ -16,11 +16,12 @@ prev = time.time()
 l = []
 p = 0
 
+msg = ""
 while True:
     # wait for incoming packets
     data,addr = sock.recvfrom(1024)  # receive up to 1024 bytes of data
     now = time.time()
-    diff = int(now-prev)
+    diff = now-prev
     #print(data)
     print("Received Normal data from:",addr)
     print("Covert bit received:",diff)
@@ -32,6 +33,7 @@ while True:
         else:
             l.append(1)
     if len(l)==8:
-        print("Covert Info:",bit_to_str(l))
+        msg +=  bit_to_str(l)
+        print("Covert Info:",msg)
         l = []
     prev = now
